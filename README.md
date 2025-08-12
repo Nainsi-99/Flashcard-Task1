@@ -16,7 +16,8 @@ This project allows users to practice multiple-choice flashcards with features l
 ---
 
 ## 📸 Screenshot
-![Flashcard Screenshot](https://github.com/Nainsi-99/Flashcard-Task1/blob/main/flashcard-app/Screenshot.png)
+![Flashcard App Screenshot](Screenshot%20(425).png)
+
 
 ---
 
