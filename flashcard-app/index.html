@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠..Flashcard App</h1>
+
+    <div class="card">
+      <div id="question">Question will appear here</div>
+      <div class="options" id="options"></div>
+      <div id="feedback"></div>
+      <button id="showAnswerBtn" style="display: none;" onclick="showCorrectAnswer()">👁️ Show Correct Answer</button>
+      <div id="correctAnswer" style="margin-top: 10px; font-weight: bold;"></div>
+    </div>
+
+    <div class="controls">
+      <button onclick="prevQuestion()">⏮️ Previous</button>
+      <button onclick="nextQuestion()">⏭️ Next</button>
+    </div>
+
+    <div class="edit-card">
+      <h3>Add / Edit Flashcard</h3>
+      <input type="text" id="newQuestion" placeholder="Enter question" />
+      <input type="text" id="newOption1" placeholder="Option 1" />
+      <input type="text" id="newOption2" placeholder="Option 2" />
+      <input type="text" id="newOption3" placeholder="Option 3" />
+      <input type="text" id="newOption4" placeholder="Option 4" />
+      <input type="text" id="newAnswer" placeholder="Correct answer (must match one option)" />
+      <button onclick="addFlashcard()">➕ Add Flashcard</button>
+      <button onclick="editFlashcard()">✏️ Edit Current</button>
+      <button onclick="deleteFlashcard()">🗑️ Delete Current</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
